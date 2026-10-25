@@ -1,0 +1,39 @@
+@use "../abstracts/variables" as *;
+@use "../abstracts/mixins";
+
+.btn-box {
+  @include mixins.absCenter;
+}
+
+.btn {
+  position: relative;
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: 700;
+  border-radius: $round-medium;
+  border: none;
+  padding: 1.2rem 6rem;
+  cursor: pointer;
+
+  &--primary {
+    background: $color-primary-light;
+    color: $color-white;
+  }
+
+  &--bordered {
+    background: transparent;
+    color: $color-primary;
+    border: 1px solid $color-primary;
+  }
+
+  &--muted {
+    background: $color-grey-dark;
+    color: $color-white;
+  }
+
+  &--disabled {
+    background: transparent;
+    color: $color-grey-dark;
+    border: 1px solid $color-grey-dark;
+  }
+}

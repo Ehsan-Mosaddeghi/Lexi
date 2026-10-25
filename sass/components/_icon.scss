@@ -1,0 +1,30 @@
+@use "../abstracts/variables" as *;
+
+.icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon--large {
+  background-color: $color-fourth;
+  padding: 3.5rem;
+  border-radius: $round-full;
+
+  .img {
+    width: 3.2rem;
+    height: 3.2rem;
+  }
+}
+
+.icon--small {
+  background-color: #343434;
+  padding: 1rem;
+  border-radius: $round-small;
+  box-shadow: 0 0.4rem 0.4rem rgba($color: #00000029, $alpha: 1.6);
+
+  .img {
+    width: 1.2rem;
+    height: 1.2rem;
+  }
+}

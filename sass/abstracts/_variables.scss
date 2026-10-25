@@ -1,8 +1,32 @@
 // COLORS
 $color-primary: #7661a4;
-$color-green: #5ff4da;
-$color-yellow: #f6bc5b;
-$color-blue: #5d5fef;
+$color-primary-light: #9277cb;
+$color-secondary: #5ff4da;
+$color-tertiary: #f6bc5b;
+$color-fourth: #5d5fef;
+$color-white: #ffffff;
+$color-grey-light: #fcfcfe;
+$color-grey: #c4c4c4;
+$color-grey-dark: #898a8d;
+$color-grey-dark-2: #484848;
+$color-black: #000;
+
+$color-bg-gradient-start: #3d3f43;
+$color-bg-gradient-mid-1: #292a2d;
+$color-bg-gradient-mid-2: #1c1e20;
+$color-bg-gradient-end: #111213;
+$background-gradient: linear-gradient(
+  to bottom,
+  $color-bg-gradient-start,
+  $color-bg-gradient-mid-1,
+  $color-bg-gradient-mid-2,
+  $color-bg-gradient-end
+);
+
+// SIZES
+$round-small: 7px;
+$round-medium: 8px;
+$round-full: 999px;
 
 // FONTS
 $font-xs: 1.2rem;
