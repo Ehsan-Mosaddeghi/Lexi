@@ -1,0 +1,121 @@
+@use "../abstracts/variables" as *;
+@use "../abstracts/mixins";
+
+.message {
+  direction: ltr;
+  display: flex;
+  gap: 2rem;
+
+  &__text {
+    max-width: 24rem;
+    font-size: $font-xs;
+    font-weight: 400;
+    line-height: 1.7;
+    padding: 1.5rem 1rem;
+  }
+
+  &__content {
+    position: relative;
+    border-radius: $round-medium 0 $round-medium $round-medium;
+    background: linear-gradient(to right, #353535, #383838);
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 15px;
+      height: 11px;
+      background-color: #383838;
+      top: 0;
+      right: -14px;
+      clip-path: polygon(0 0, 100% 50%, 100% 50%, 0 100%);
+    }
+
+    &::after {
+      position: absolute;
+      content: "";
+      width: 100%;
+      height: 100%;
+      inset: 0;
+      background: linear-gradient(to right, $color-secondary, #353535);
+      transform: scale(1.01);
+      z-index: -1;
+      border-radius: $round-medium;
+    }
+  }
+
+  &__profile {
+    position: relative;
+    transform: translateY(-2rem);
+    width: 6.4rem;
+    height: 6.4rem;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    box-shadow: 0 4px 4px rgba($color-black, 0.16);
+    border-radius: $round-full;
+  }
+
+  .voice-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem 1.5rem 1.5rem;
+  }
+
+  &__voice {
+    position: relative;
+    &__timeline {
+      gap: 0.2rem;
+      display: flex;
+      align-items: flex-end;
+    }
+
+    &--span {
+      display: block;
+      background-image: linear-gradient(to top, transparent, #707072);
+      border-radius: $round-full;
+    }
+
+    &--span-1 {
+      width: 3px;
+      height: 12px;
+    }
+    &--span-2 {
+      width: 3px;
+      height: 24px;
+    }
+    &--span-3 {
+      width: 3px;
+      height: 16px;
+    }
+  }
+
+  &__detail {
+    position: absolute;
+    bottom: -2rem;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 5px;
+    font-size: 1rem;
+    color: $color-grey;
+  }
+
+  .file-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem 1.5rem 1.5rem;
+  }
+
+  &__file {
+    position: relative;
+    &__name {
+      font-size: $font-sm;
+      color: $color-grey-dark;
+    }
+  }
+}

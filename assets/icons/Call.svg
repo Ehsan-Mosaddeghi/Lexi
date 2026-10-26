@@ -1,0 +1,9 @@
+<svg viewBox="0 0 16 16" fill="none" width="32" height="32" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <style>
+        :root, .palette0 {color: currentColor;
+            --color0: #fcfcfe;
+            --color1: #fff;
+        }
+    </style>
+    <path fill="var(--color1, #fff)" clip-rule="evenodd" d="M7.6057 8.3978c3.3592 3.3583 4.1213-0.5269 6.2601 1.6105 2.062 2.0614 3.2471 2.4744 0.6346 5.0862-0.3272 0.263-2.4064 3.427-9.7134-3.8779-7.3078-7.3059-4.1457-9.3872-3.8826-9.7143 2.6189-2.6191 3.0248-1.427 5.0868 0.6344C8.13 4.2749 4.2465 5.0395 7.6057 8.3978z" fill-rule="evenodd" />
+</svg>

@@ -1,0 +1,83 @@
+@use "../abstracts/variables" as *;
+
+.form-group {
+  direction: rtl;
+  position: relative;
+  margin: 2rem auto;
+
+  .input-box {
+    position: relative;
+    width: 30rem;
+
+    &__field {
+      position: relative;
+      font-size: $font-sm;
+      font-family: inherit;
+      color: inherit;
+      width: 100%;
+      padding: 1rem;
+      border-radius: $round-large;
+      border: 1px solid $color-grey-dark-2;
+      box-shadow: 0 4px 4px rgba($color-black, 0.5);
+      background-color: transparent;
+
+      &:focus {
+        outline: none;
+        border-top: 1px solid $color-primary;
+      }
+
+      &:focus:invalid {
+        border-top: 1px solid $color-error;
+      }
+    }
+
+    &--icon {
+      .input-box__field {
+        padding-right: 4rem;
+      }
+
+      .input-box__icon {
+        position: absolute;
+        transform: translateY(-50%);
+        top: 50%;
+        right: 5%;
+        width: 2rem;
+        height: 2.5rem;
+        color: $color-grey-dark-2;
+      }
+    }
+
+    &--action {
+      .input-box__field {
+        padding-left: 8rem;
+      }
+
+      .input-box__action {
+        position: absolute;
+        left: 0.8rem;
+        top: 50%;
+        transform: translateY(-50%);
+        padding: 0.5rem 1.6rem;
+        border: none;
+        border-radius: $round-medium;
+        background-color: $color-fourth;
+        color: $color-white;
+        font-size: $font-sm;
+        z-index: 1;
+      }
+    }
+
+    &--muted {
+      .input-box__field {
+        background-color: $color-grey-dark-3;
+        color: $color-grey-dark;
+      }
+    }
+  }
+
+  .label {
+    display: inline-block;
+    color: $color-grey-dark;
+    margin-bottom: 1rem;
+  }
+}

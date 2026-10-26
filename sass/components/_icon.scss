@@ -1,7 +1,7 @@
 @use "../abstracts/variables" as *;
 
 .icon {
-  display: inline-flex;
+  display: flex;
   align-items: center;
   justify-content: center;
 }
@@ -19,11 +19,12 @@
 
 .icon--small {
   background-color: #343434;
-  padding: 1rem;
   border-radius: $round-small;
   box-shadow: 0 0.4rem 0.4rem rgba($color: #00000029, $alpha: 1.6);
+  width: 3.2rem;
+  height: 3.2rem;
 
-  .img {
+  svg {
     width: 1.2rem;
     height: 1.2rem;
   }

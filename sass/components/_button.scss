@@ -37,3 +37,13 @@
     border: 1px solid $color-grey-dark;
   }
 }
+
+.link {
+  &:link,
+  &:visited {
+    cursor: pointer;
+    padding: 1rem 2rem;
+    text-decoration: none;
+    border-radius: $round-full;
+  }
+}

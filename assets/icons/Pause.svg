@@ -1,4 +1,10 @@
-<svg width="13" height="15" viewBox="0 0 13 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-<rect width="4.05405" height="15" rx="2.02703" fill="white"/>
-<rect x="8.91895" width="4.05405" height="15" rx="2.02703" fill="white"/>
+<svg viewBox="0 0 13 15" fill="var(--color1, #fff)" width="27.733333" height="32" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <style>
+        :root, .palette0 {color: currentColor;
+            --color0: #fcfcfe;
+            --color1: #fff;
+        }
+    </style>
+    <rect width="4.05405" height="15" rx="2.02703" />
+    <rect width="4.05405" height="15" rx="2.02703" x="8.91895" />
 </svg>

@@ -1,0 +1,44 @@
+@use "../abstracts/variables" as *;
+@use "../abstracts/mixins";
+
+.navigation {
+  background-color: transparent;
+  backdrop-filter: blur(10px);
+  padding: 1rem;
+  border-radius: $round-xl;
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  &__item {
+    list-style: none;
+  }
+
+  &__link {
+    @include mixins.flexCenter;
+    gap: 0.5rem;
+    color: $color-white;
+    transition: all 0.2s;
+
+    &:not(&--active):hover {
+      background-color: rgba($color-primary, 0.2);
+    }
+
+    &--active {
+      background-color: rgba($color-primary, 0.5);
+    }
+  }
+
+  &__icon {
+    width: 2.4rem;
+    height: 2.4rem;
+  }
+
+  &__label {
+    font-size: $font-sm;
+  }
+}
