@@ -1,3 +1,5 @@
+@use "../abstracts/variables" as *;
+
 @mixin absCenter {
   position: absolute;
   top: 50%;
@@ -9,4 +11,11 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+@mixin card {
+  background-color: rgba($color-grey-dark-2, 0.6);
+  backdrop-filter: blur(10px);
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
 }

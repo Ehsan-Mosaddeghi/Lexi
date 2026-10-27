@@ -571,6 +571,107 @@ body {
   color: #e26b6b;
 }
 
+.payment-card {
+  background-color: rgba(72, 72, 72, 0.6);
+  backdrop-filter: blur(10px);
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  position: relative;
+  padding: 6rem 0 2.5rem;
+  width: 40rem;
+}
+.payment-card__header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 2.5rem;
+  gap: 1rem;
+}
+.payment-card__icon {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 8rem;
+  height: 8rem;
+  padding: 0.5rem;
+}
+.payment-card__label {
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+.payment-card__description {
+  font-size: 1.4rem;
+  font-weight: 300;
+}
+.payment-card__separator {
+  position: relative;
+  display: flex;
+  height: 16px;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin: 2rem 0;
+}
+.payment-card__separator::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 3.2rem;
+  height: 3.2rem;
+  border-radius: 999px;
+  background: linear-gradient(to left, #292a2d 50%, transparent 50%);
+  left: 0;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.payment-card__separator::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 3.2rem;
+  height: 3.2rem;
+  border-radius: 999px;
+  background: linear-gradient(to right, #292a2d 50%, transparent 50%);
+  right: 0;
+  top: 50%;
+  transform: translate(50%, -50%);
+}
+.payment-card__line {
+  position: relative;
+  display: block;
+  width: 80%;
+  height: 1px;
+  background: #484848;
+}
+.payment-card__detail {
+  padding: 0 2.5rem;
+}
+.payment-card__item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 2rem 0;
+}
+.payment-card__key {
+  font-size: 1.4rem;
+  font-weight: 300;
+}
+.payment-card__value {
+  font-size: 1.4rem;
+  font-weight: 400;
+}
+.payment-card__button-box {
+  padding: 0 2.5rem;
+}
+.payment-card--success .payment-card__icon {
+  background-color: #5ff4da;
+}
+.payment-card--error .payment-card__icon {
+  background-color: #e26b6b;
+}
+
 .u-bg-muted {
   background: #484848;
 }
