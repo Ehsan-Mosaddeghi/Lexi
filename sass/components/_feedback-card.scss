@@ -1,0 +1,84 @@
+@use "../abstracts/variables" as *;
+
+.feedback-card {
+  padding: 2rem;
+  background-color: rgba($color-grey-dark-2, 0.6);
+  backdrop-filter: blur(10px);
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+
+  &__header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 0.5px solid rgba(#ededed80, 0.5);
+
+    &__icon {
+      width: 4rem;
+      height: 4rem;
+      padding: 1.2rem;
+      box-shadow: 0 4px 4px rgba($color-black, 0.45);
+    }
+  }
+  &__title {
+  }
+
+  &__detail {
+    direction: ltr;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 1.5rem 0;
+
+    &__word {
+    }
+    &__sound-btn {
+      border-radius: $round-full;
+      background-color: #7879f1;
+      svg {
+        width: 1.6rem;
+        height: 1.6rem;
+      }
+    }
+  }
+
+  &__label {
+    color: $color-grey;
+    font-size: $font-sm;
+    margin-bottom: 0.5rem;
+  }
+
+  &__voice {
+    direction: ltr;
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 2rem;
+
+    &__timeline {
+      align-items: center;
+    }
+  }
+
+  &--success {
+    .feedback-card__title {
+      color: $color-secondary;
+    }
+
+    .feedback-card__header__icon {
+      background-color: $color-secondary;
+    }
+  }
+
+  &--error {
+    .feedback-card__title {
+      color: $color-error;
+    }
+    .feedback-card__header__icon {
+      background-color: $color-error;
+    }
+    .feedback-card__detail__word {
+      color: $color-error;
+    }
+  }
+}

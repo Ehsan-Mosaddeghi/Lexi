@@ -1,0 +1,26 @@
+@use "../abstracts/variables" as *;
+
+.voice-timeline {
+  gap: 0.2rem;
+  display: flex;
+  //   align-items: flex-end;
+
+  .voice-span {
+    display: block;
+    background-image: linear-gradient(to top, transparent, #707072);
+    border-radius: $round-full;
+
+    &--1 {
+      width: 3px;
+      height: 12px;
+    }
+    &--2 {
+      width: 3px;
+      height: 24px;
+    }
+    &--3 {
+      width: 3px;
+      height: 16px;
+    }
+  }
+}

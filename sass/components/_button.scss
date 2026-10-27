@@ -8,11 +8,12 @@
 .btn {
   position: relative;
   font-family: inherit;
+  width: 100%;
   font-size: inherit;
   font-weight: 700;
   border-radius: $round-medium;
   border: none;
-  padding: 1.2rem 6rem;
+  padding: 0.8rem 6rem;
   cursor: pointer;
 
   &--primary {
