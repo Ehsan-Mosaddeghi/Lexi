@@ -467,76 +467,155 @@
       <button class="btn btn--primary">تایید</button>
     </div> -->
 
-    <!-- <div class="payment-card payment-card--success">
-      <div class="payment-card__header">
-        <div class="icon icon--large payment-card__icon">
-          <svg>
-            <use xlink:href="assets/sprite.svg#Tick"></use>
-          </svg>
+    <!-- <div class="status-card status-card--success">
+        <div class="status-card__header">
+          <div class="icon icon--large status-card__icon">
+            <svg>
+              <use xlink:href="assets/sprite.svg#Tick"></use>
+            </svg>
+          </div>
+
+          <h3 class="status-card__label">متشکریم !</h3>
+          <p class="status-card__description">تراکنش شما انجام شد</p>
         </div>
 
-        <h3 class="payment-card__label">متشکریم !</h3>
-        <p class="payment-card__description">تراکنش شما انجام شد</p>
-      </div>
-
-      <div class="payment-card__separator">
-        <span class="payment-card__line"></span>
-      </div>
-
-      <div class="payment-card__detail">
-        <div class="payment-card__item">
-          <p class="payment-card__key">زمان :</p>
-          <span class="payment-card__value"> 12:15 </span>
+        <div class="status-card__separator">
+          <span class="status-card__line"></span>
         </div>
-        <div class="payment-card__item">
-          <p class="payment-card__key">تاریخ :</p>
-          <span class="payment-card__value"> 00/05/18 </span>
-        </div>
-        <div class="payment-card__item">
-          <p class="payment-card__key">کد تراکنش :</p>
-          <span class="payment-card__value"> 12548977 </span>
-        </div>
-      </div>
 
-      <div class="payment-card__button-box">
-        <button class="btn btn--primary">بازگشت به صفحه اصلی</button>
-      </div>
-    </div> -->
+        <div class="status-card__detail">
+          <div class="status-card__item">
+            <p class="status-card__key">زمان :</p>
+            <span class="status-card__value"> 12:15 </span>
+          </div>
+          <div class="status-card__item">
+            <p class="status-card__key">تاریخ :</p>
+            <span class="status-card__value"> 00/05/18 </span>
+          </div>
+          <div class="status-card__item">
+            <p class="status-card__key">کد تراکنش :</p>
+            <span class="status-card__value"> 12548977 </span>
+          </div>
+        </div>
 
-    <!-- <div class="payment-card payment-card--error">
-      <div class="payment-card__header">
-        <div class="icon icon--large payment-card__icon">
+        <div class="status-card__button-box">
+          <button class="btn btn--primary">بازگشت به صفحه اصلی</button>
+        </div>
+      </div> -->
+
+    <!-- <div class="status-card status-card--error">
+      <div class="status-card__header">
+        <div class="icon icon--large status-card__icon">
           <svg>
             <use xlink:href="assets/sprite.svg#Cross"></use>
           </svg>
         </div>
 
-        <h3 class="payment-card__label">خطا</h3>
-        <p class="payment-card__description">عدم موفقیت در تراکنش</p>
+        <h3 class="status-card__label">خطا</h3>
+        <p class="status-card__description">عدم موفقیت در تراکنش</p>
       </div>
 
-      <div class="payment-card__separator">
-        <span class="payment-card__line"></span>
+      <div class="status-card__separator">
+        <span class="status-card__line"></span>
       </div>
 
-      <div class="payment-card__detail">
-        <div class="payment-card__item">
-          <p class="payment-card__key">زمان :</p>
-          <span class="payment-card__value"> 12:15 </span>
+      <div class="status-card__detail">
+        <div class="status-card__item">
+          <p class="status-card__key">زمان :</p>
+          <span class="status-card__value"> 12:15 </span>
         </div>
-        <div class="payment-card__item">
-          <p class="payment-card__key">تاریخ :</p>
-          <span class="payment-card__value"> 00/05/18 </span>
+        <div class="status-card__item">
+          <p class="status-card__key">تاریخ :</p>
+          <span class="status-card__value"> 00/05/18 </span>
         </div>
-        <div class="payment-card__item">
-          <p class="payment-card__key">کد تراکنش :</p>
-          <span class="payment-card__value"> 12548977 </span>
+        <div class="status-card__item">
+          <p class="status-card__key">کد تراکنش :</p>
+          <span class="status-card__value"> 12548977 </span>
         </div>
       </div>
 
-      <div class="payment-card__button-box">
+      <div class="status-card__button-box">
         <button class="btn btn--primary">تلاش مجدد</button>
       </div>
+    </div> -->
+
+    <!-- <div class="card payment-card">
+      <h3 class="payment-card__title">پرداخت</h3>
+      <div class="payment-card__detail">
+        <p class="payment-card__price-label">قیمت :</p>
+        <p class="payment-card__price-value">
+          <span class="price-amount">۲۱٬۰۰۰٬۰۰۰</span>
+          <span class="price-currency">تومان</span>
+        </p>
+      </div>
+
+      <p class="payment-card__select-gateway">
+        نوع درگاه بانکی خود را انتخاب کنید
+      </p>
+
+      <div class="form-group">
+        <div class="payment-card__gateway">
+          <div>
+            <input
+              type="radio"
+              class="payment-card__gateway-input"
+              id="melli"
+              name="bank-gateway"
+              hidden
+            />
+            <label for="melli" class="payment-card__gateway-label">
+              <span class="payment-card__gateway-button"></span>
+              بانک ملی</label
+            >
+          </div>
+
+          <img
+            src="assets/images/logo-melli.png"
+            alt="Melli"
+            class="payment-card__gateway-img"
+          />
+        </div>
+        <div class="payment-card__gateway">
+          <div>
+            <input
+              type="radio"
+              class="payment-card__gateway-input"
+              id="zarinpal"
+              name="bank-gateway"
+              hidden
+            />
+            <label for="zarinpal" class="payment-card__gateway-label">
+              <span class="payment-card__gateway-button"></span>
+              زرین پال</label
+            >
+          </div>
+
+          <img
+            src="assets/images/logo-zarinpal.png"
+            alt="Zarin pal"
+            class="payment-card__gateway-img"
+          />
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="code" class="label">کد تخفیف</label>
+
+        <div class="input-box input-box--action">
+          <div class="">
+            <button class="btn input-box__action">اعمال</button>
+          </div>
+
+          <input
+            type="text"
+            id="code"
+            class="input-box__field"
+            placeholder="کد تخفیف خود را وارد کنید"
+          />
+        </div>
+      </div>
+
+      <button class="btn btn--primary">پرداخت</button>
     </div> -->
   </body>
 </html>

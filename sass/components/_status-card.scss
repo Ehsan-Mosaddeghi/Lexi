@@ -1,0 +1,120 @@
+@use "../abstracts/variables" as *;
+@use "../abstracts/mixins";
+
+.status-card {
+  @include mixins.card;
+  position: relative;
+  padding: 6rem 0 2.5rem;
+  width: 40rem;
+
+  &__header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 2.5rem;
+    gap: 1rem;
+  }
+
+  &__icon {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 8rem;
+    height: 8rem;
+    padding: 0.5rem;
+  }
+
+  &__label {
+    font-size: $font-medium;
+    font-weight: 500;
+  }
+
+  &__description {
+    font-size: $font-sm;
+    font-weight: 300;
+  }
+
+  &__separator {
+    position: relative;
+    display: flex;
+    height: 16px;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: 2rem 0;
+    &::before {
+      content: "";
+      display: block;
+      position: absolute;
+      width: 3.2rem;
+      height: 3.2rem;
+      border-radius: $round-full;
+      background: linear-gradient(
+        to left,
+        $color-bg-gradient-mid-1 50%,
+        transparent 50%
+      );
+      left: 0;
+      top: 50%;
+      transform: translate(-50%, -50%);
+    }
+    &::after {
+      content: "";
+      display: block;
+      position: absolute;
+      width: 3.2rem;
+      height: 3.2rem;
+      border-radius: $round-full;
+      background: linear-gradient(
+        to right,
+        $color-bg-gradient-mid-1 50%,
+        transparent 50%
+      );
+      right: 0;
+      top: 50%;
+      transform: translate(50%, -50%);
+    }
+  }
+
+  &__line {
+    position: relative;
+    display: block;
+    width: 80%;
+    height: 1px;
+    background: $color-grey-dark-2;
+  }
+
+  &__detail {
+    padding: 0 2.5rem;
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 2rem 0;
+  }
+
+  &__key {
+    font-size: $font-sm;
+    font-weight: 300;
+  }
+
+  &__value {
+    font-size: $font-sm;
+    font-weight: 400;
+  }
+
+  &__button-box {
+    padding: 0 2.5rem;
+  }
+
+  &--success &__icon {
+    background-color: $color-secondary;
+  }
+  &--error &__icon {
+    background-color: $color-error;
+  }
+}
