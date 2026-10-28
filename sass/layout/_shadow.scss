@@ -1,0 +1,40 @@
+@use "../abstracts/variables" as *;
+@use "../abstracts/mixins";
+
+.shadow--bl {
+  &::after {
+    @include mixins.purpleShadow;
+    left: -20%;
+    bottom: -50%;
+  }
+}
+.shadow--br {
+  &::after {
+    @include mixins.purpleShadow;
+    right: -20%;
+    bottom: -50%;
+  }
+}
+.shadow--tl {
+  &::after {
+    @include mixins.purpleShadow;
+    left: -20%;
+    top: -50%;
+  }
+}
+.shadow--tr {
+  &::after {
+    @include mixins.purpleShadow;
+    right: -20%;
+    top: -50%;
+  }
+}
+
+.shadow--center {
+  &::after {
+    @include mixins.purpleShadow;
+    left: 60%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+}

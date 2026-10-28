@@ -19,3 +19,15 @@
   border-top-left-radius: 25px;
   border-top-right-radius: 25px;
 }
+
+@mixin purpleShadow {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 46.5rem;
+  height: 46.5rem;
+  background-color: rgba($color-primary, 0.8);
+  border-radius: $round-full;
+  filter: blur(150px);
+  z-index: -100;
+}

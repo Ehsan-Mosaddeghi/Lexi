@@ -13,6 +13,10 @@ html {
 
 body {
   box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  min-height: 100svh;
+  overflow-x: clip;
 }
 
 @font-face {
@@ -45,26 +49,31 @@ body {
   min-height: 100svh;
 }
 
-.btn-box {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+.heading-secondary {
+  font-size: 2.8rem;
+  font-weight: 800;
+  margin-bottom: 2rem;
+}
+
+.paragraph {
+  font-size: 1.6rem;
+  font-weight: 500;
+  margin-bottom: 4rem;
 }
 
 .btn {
   position: relative;
   font-family: inherit;
-  width: 100%;
+  width: fit-content;
   font-size: inherit;
-  font-weight: 700;
+  font-weight: 400;
   border-radius: 8px;
   border: none;
   padding: 0.8rem 6rem;
   cursor: pointer;
 }
 .btn--primary {
-  background: #9277cb;
+  background: #7661a4;
   color: #ffffff;
 }
 .btn--bordered {
@@ -768,17 +777,36 @@ body {
   border-radius: 999px;
 }
 
+.u-margin-bottom-small {
+  margin-bottom: 2rem;
+}
+
+.u-margin-bottom-medium {
+  margin-bottom: 4rem;
+}
+
+.u-margin-bottom-small {
+  margin-bottom: 6rem;
+}
+
+.u-margin-y-medium {
+  margin: 6rem 0;
+}
+
 .navigation {
   background-color: transparent;
   backdrop-filter: blur(10px);
   padding: 1rem;
+  margin: 0 10rem;
   border-radius: 15px;
+  display: flex;
+  align-items: center;
+  gap: 5rem;
 }
 .navigation__list {
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  gap: 2rem;
+  gap: 3rem;
 }
 .navigation__item {
   list-style: none;
@@ -803,6 +831,152 @@ body {
 }
 .navigation__label {
   font-size: 1.4rem;
+}
+
+.container {
+  max-width: 130rem;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.main-section {
+  flex: 1;
+}
+
+.grid-cols-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+}
+
+.shadow--bl::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 46.5rem;
+  height: 46.5rem;
+  background-color: rgba(118, 97, 164, 0.8);
+  border-radius: 999px;
+  filter: blur(150px);
+  z-index: -100;
+  left: -20%;
+  bottom: -50%;
+}
+
+.shadow--br::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 46.5rem;
+  height: 46.5rem;
+  background-color: rgba(118, 97, 164, 0.8);
+  border-radius: 999px;
+  filter: blur(150px);
+  z-index: -100;
+  right: -20%;
+  bottom: -50%;
+}
+
+.shadow--tl::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 46.5rem;
+  height: 46.5rem;
+  background-color: rgba(118, 97, 164, 0.8);
+  border-radius: 999px;
+  filter: blur(150px);
+  z-index: -100;
+  left: -20%;
+  top: -50%;
+}
+
+.shadow--tr::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 46.5rem;
+  height: 46.5rem;
+  background-color: rgba(118, 97, 164, 0.8);
+  border-radius: 999px;
+  filter: blur(150px);
+  z-index: -100;
+  right: -20%;
+  top: -50%;
+}
+
+.shadow--center::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 46.5rem;
+  height: 46.5rem;
+  background-color: rgba(118, 97, 164, 0.8);
+  border-radius: 999px;
+  filter: blur(150px);
+  z-index: -100;
+  left: 60%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.hero-section {
+  position: relative;
+}
+
+.hero__images {
+  position: relative;
+}
+.hero__img-1 {
+  object-fit: cover;
+  width: 32rem;
+}
+.hero__img-2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 38rem;
+  object-fit: cover;
+  transform: translate(-65%, -50%);
+  z-index: -1;
+}
+.hero__info {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 8rem;
+  margin-top: 8rem;
+}
+.hero__info-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+.hero__info-item:not(:last-child) {
+  border-left: 1px solid #898a8d;
+  padding-left: 4rem;
+}
+.hero__info-icon {
+  width: 4rem;
+  height: 5rem;
+}
+.hero__installed-icon {
+  color: #c4c4c4;
+}
+.hero__users-icon {
+  color: #f4a38c;
+}
+.hero__info-amount {
+  font-size: 2.4rem;
+  font-weight: 800;
+  display: block;
+  direction: ltr;
+  margin-bottom: 0.5rem;
+}
+.hero__info-label {
+  color: #898a8d;
 }
 
 /*# sourceMappingURL=style.css.map */

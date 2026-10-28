@@ -1,0 +1,69 @@
+@use "../abstracts/variables" as *;
+@use "../abstracts/mixins";
+
+.hero-section {
+  position: relative;
+}
+
+.hero {
+  &__images {
+    position: relative;
+  }
+  &__img-1 {
+    object-fit: cover;
+    width: 32rem;
+  }
+  &__img-2 {
+    @include mixins.absCenter;
+    width: 38rem;
+    object-fit: cover;
+    transform: translate(-65%, -50%);
+    z-index: -1;
+  }
+
+  &__content {
+  }
+
+  &__info {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 8rem;
+    margin-top: 8rem;
+  }
+
+  &__info-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+
+    &:not(:last-child) {
+      border-left: 1px solid $color-grey-dark;
+      padding-left: 4rem;
+    }
+  }
+
+  &__info-icon {
+    width: 4rem;
+    height: 5rem;
+  }
+
+  &__installed-icon {
+    color: $color-grey;
+  }
+  &__users-icon {
+    color: #f4a38c;
+  }
+
+  &__info-amount {
+    font-size: $font-xl;
+    font-weight: 800;
+    display: block;
+    direction: ltr;
+    margin-bottom: 0.5rem;
+  }
+  &__info-label {
+    color: $color-grey-dark;
+  }
+}

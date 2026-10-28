@@ -7,8 +7,93 @@
     <title>Lexi</title>
   </head>
   <body>
-    <div class="btn-box"></div>
+    <nav class="navigation">
+      <a href="#" class="">
+        <img src="assets/images/logo.svg" />
+      </a>
 
+      <ul class="navigation__list">
+        <li class="navigation__item">
+          <a href="#" class="link navigation__link navigation__link--active">
+            <span class="naviation__label">صفحه اصلی</span>
+          </a>
+        </li>
+        <li class="navigation__item">
+          <a href="#" class="link navigation__link">
+            <span class="naviation__label">همکاری با ما</span>
+          </a>
+        </li>
+        <li class="navigation__item">
+          <a href="#" class="link navigation__link">
+            <span class="naviation__label">درباره ما</span>
+          </a>
+        </li>
+        <li class="navigation__item">
+          <a href="#" class="link navigation__link">
+            <span class="naviation__label">تماس با ما</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <main class="main-section container">
+      <section class="hero-section grid-cols-2 u-margin-y-medium shadow--bl">
+        <div class="hero__images shadow--center">
+          <img
+            src="assets/images/mobile-home.png"
+            alt="Home page in mobile"
+            class="hero__img-1"
+          />
+          <img
+            src="assets/images/mobile-geramer.png"
+            alt="Geramer page in mobile"
+            class="hero__img-2"
+          />
+        </div>
+
+        <div class="hero__content">
+          <h2 class="heading-secondary">آموزش زبان راحت تر از همیشه!!!</h2>
+
+          <p class="paragraph">
+            اپلیکیشن لکسی، اولین پلنفرم هوشمند آموزش زبان انگلیسی میباشد که با
+            بهره گیری از مناسب ترین متد آموزشی، شما میتوانید آموزش زبان را با آن
+            شروع کنید. محتوای آموزشی این اپ، کاملا اصلی و به اصلاح ارجینال
+            میباشد و تیم تولید محتوای لکسی بصورت تخصصی مشغول تولید محتوای آموزشی
+            برای اپ بوده اند.
+          </p>
+
+          <button class="btn btn--primary">دانلود اپلیکیشن</button>
+
+          <div class="hero__info">
+            <div class="hero__info-item">
+              <div class="icon hero__info-icon hero__installed-icon">
+                <svg>
+                  <use xlink:href="assets/sprite.svg#Arrow-Down-Square"></use>
+                </svg>
+              </div>
+
+              <div>
+                <span class="hero__info-amount">۱۱.۲۵۴</span>
+                <p class="hero__info-label">نصب اپلیکیشن</p>
+              </div>
+            </div>
+            <div class="hero__info-item">
+              <div class="icon hero__info-icon hero__users-icon">
+                <svg>
+                  <use xlink:href="assets/sprite.svg#Profile"></use>
+                </svg>
+              </div>
+
+              <div>
+                <span class="hero__info-amount">۷.۳۸۵</span>
+                <p class="hero__info-label">تعداد کاربران</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>Footer</footer>
     <!-- <div class="alphabet-keyboard">
         <div class="alphabet-keyboard__row">
           <span class="alphabet-keyboard__item">Q</span>
@@ -190,7 +275,7 @@
       </div>
     </form> -->
 
-    <!-- <nav class="navigation">
+    <!-- <nav class="mobile-navigation">
       <ul class="navigation__list">
         <li class="navigation__item">
           <a href="#" class="link navigation__link navigation__link--active">

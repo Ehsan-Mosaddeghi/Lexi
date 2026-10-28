@@ -1,23 +1,19 @@
 @use "../abstracts/variables" as *;
 @use "../abstracts/mixins";
 
-.btn-box {
-  @include mixins.absCenter;
-}
-
 .btn {
   position: relative;
   font-family: inherit;
-  width: 100%;
+  width: fit-content;
   font-size: inherit;
-  font-weight: 700;
+  font-weight: 400;
   border-radius: $round-medium;
   border: none;
   padding: 0.8rem 6rem;
   cursor: pointer;
 
   &--primary {
-    background: $color-primary-light;
+    background: $color-primary;
     color: $color-white;
   }
 
