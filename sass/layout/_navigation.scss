@@ -4,8 +4,10 @@
 .navigation {
   background-color: transparent;
   backdrop-filter: blur(10px);
-  padding: 1rem;
-  margin: 0 10rem;
+  padding: 1rem 4rem;
+  margin: 0 auto 6rem;
+  max-width: 130rem;
+  width: 100%;
   border-radius: $round-xl;
   display: flex;
   align-items: center;
