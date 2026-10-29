@@ -2,3 +2,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
+.grid-cols-3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
