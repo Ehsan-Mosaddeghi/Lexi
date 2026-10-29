@@ -1099,4 +1099,23 @@ body {
   font-size: 1.8rem;
 }
 
+.application-section .application__links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.application-section .application__link {
+  display: flex;
+  flex-direction: column;
+}
+.application-section .link__logo-bazar {
+  width: 4rem;
+}
+.application-section .link__logo-sib {
+  width: 11rem;
+}
+.application-section .link__logo-google {
+  width: 11rem;
+}
+
 /*# sourceMappingURL=style.css.map */
