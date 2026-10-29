@@ -102,6 +102,7 @@ body {
   padding: 1rem 2rem;
   text-decoration: none;
   border-radius: 999px;
+  color: #ffffff;
 }
 
 .icon {
@@ -934,6 +935,21 @@ body {
   left: 60%;
   top: 50%;
   transform: translate(-50%, -50%);
+}
+
+.footer {
+  background: #353535;
+  padding: 8rem 8rem;
+  border-radius: 12px;
+  justify-items: center;
+  margin: 8rem auto 4rem;
+}
+.footer__list {
+  list-style: none;
+}
+.footer__link {
+  display: inline-block;
+  margin-bottom: 1rem;
 }
 
 .hero-section {

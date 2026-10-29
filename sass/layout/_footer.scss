@@ -1,0 +1,19 @@
+@use "../abstracts/variables" as *;
+
+.footer {
+  background: #353535;
+  padding: 8rem 8rem;
+  border-radius: 12px;
+  justify-items: center;
+  margin: 8rem auto 4rem;
+
+  &__list {
+    list-style: none;
+  }
+
+  &__link {
+    display: inline-block;
+    margin-bottom: 1rem;
+    // color: $color-primary;
+  }
+}
