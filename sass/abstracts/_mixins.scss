@@ -31,3 +31,19 @@
   filter: blur(150px);
   z-index: -100;
 }
+
+@mixin gradientBorder($angle: 135deg, $from, $to, $width: 1px) {
+  &::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    padding: $width;
+    border-radius: inherit;
+    background: linear-gradient($angle, $from, $to);
+    mask:
+      linear-gradient(#000 0 0) content-box,
+      linear-gradient(#000 0 0);
+    mask-composite: exclude;
+    pointer-events: none;
+  }
+}
