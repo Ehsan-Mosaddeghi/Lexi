@@ -5,5 +5,7 @@
 }
 
 .main-section {
+  position: relative;
+  overflow-x: clip;
   flex: 1;
 }

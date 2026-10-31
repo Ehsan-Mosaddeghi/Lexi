@@ -38,10 +38,8 @@
       </ul>
     </nav>
     <main class="main-section">
-      <section
-        class="hero-section grid-cols-2 u-margin-bottom-xl container shadow--bl"
-      >
-        <div class="hero__images shadow--center">
+      <section class="hero-section grid-cols-2 u-margin-bottom-xl container">
+        <div class="hero__images">
           <img
             src="assets/images/mobile-home.png"
             alt="Home page in mobile"
@@ -118,11 +116,13 @@
             </p>
           </div>
 
-          <img
-            class="about__image"
-            src="assets/images/about-us.png"
-            alt="About us image"
-          />
+          <div class="about__image-container">
+            <img
+              class="about__image"
+              src="assets/images/about-us.png"
+              alt="About us image"
+            />
+          </div>
         </div>
       </section>
 
@@ -334,39 +334,41 @@
       </section>
     </main>
 
-    <footer class="footer container grid-cols-3">
-      <div>
-        <img src="assets/images/logo.svg" />
-        <p>
-          اپلیکیشن لکسی، اولین پلنفرم هوشمند آموزش زبان انگلیسی میباشد که با
-          بهره گیری از مناسب ترین متد آموزشی، شما میتوانید آموزش زبان را با آن
-          شروع کنید. محتوای آموزشی این اپ، کاملا اصلی و به اصلاح ارجینال میباشد
-          و تیم تولید محتوای لکسی بصورت تخصصی مشغول تولید محتوای آموزشی برای اپ
-          بوده اند
-        </p>
-      </div>
+    <footer class="footer-box">
+      <div class="footer grid-cols-3 container">
+        <div>
+          <img src="assets/images/logo.svg" />
+          <p>
+            اپلیکیشن لکسی، اولین پلنفرم هوشمند آموزش زبان انگلیسی میباشد که با
+            بهره گیری از مناسب ترین متد آموزشی، شما میتوانید آموزش زبان را با آن
+            شروع کنید. محتوای آموزشی این اپ، کاملا اصلی و به اصلاح ارجینال
+            میباشد و تیم تولید محتوای لکسی بصورت تخصصی مشغول تولید محتوای آموزشی
+            برای اپ بوده اند
+          </p>
+        </div>
 
-      <div>
-        <h3 class="heading-tertiary">دسترسی</h3>
-        <ul class="footer__list">
-          <li>
-            <a href="#" class="link footer__link">صفحه اصلی</a>
-          </li>
-          <li>
-            <a href="#" class="link footer__link">همکاری با ما</a>
-          </li>
-          <li>
-            <a href="#" class="link footer__link">درباره ما</a>
-          </li>
-          <li>
-            <a href="#" class="link footer__link">قوانین و مقررات</a>
-          </li>
-        </ul>
-      </div>
+        <div>
+          <h3 class="heading-tertiary">دسترسی</h3>
+          <ul class="footer__list">
+            <li>
+              <a href="#" class="link footer__link">صفحه اصلی</a>
+            </li>
+            <li>
+              <a href="#" class="link footer__link">همکاری با ما</a>
+            </li>
+            <li>
+              <a href="#" class="link footer__link">درباره ما</a>
+            </li>
+            <li>
+              <a href="#" class="link footer__link">قوانین و مقررات</a>
+            </li>
+          </ul>
+        </div>
 
-      <div>
-        <h3 class="heading-tertiary">مجوزها</h3>
-        <img src="assets/images/license.png" alt="Rules" />
+        <div>
+          <h3 class="heading-tertiary">مجوزها</h3>
+          <img src="assets/images/license.png" alt="Rules" />
+        </div>
       </div>
     </footer>
     <!-- <div class="alphabet-keyboard">

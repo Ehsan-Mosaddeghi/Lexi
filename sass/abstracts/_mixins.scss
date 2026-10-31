@@ -22,14 +22,14 @@
 
 @mixin purpleShadow {
   content: "";
-  display: block;
   position: absolute;
   width: 46.5rem;
   height: 46.5rem;
-  background-color: rgba($color-primary, 0.8);
   border-radius: $round-full;
+  background-color: rgba($color-primary, 0.5);
   filter: blur(150px);
-  z-index: -100;
+  pointer-events: none;
+  z-index: -10;
 }
 
 @mixin gradientBorder($angle: 135deg, $from, $to, $width: 1px) {

@@ -5,10 +5,19 @@
   position: relative;
   align-items: center;
   gap: 2rem;
-
+  // isolation: isolate;
+  &::before {
+    @include mixins.purpleShadow;
+    top: 40rem; // move up or down to match the design
+    left: calc(50% - 50vw - 11rem);
+  }
   .hero {
     &__images {
       position: relative;
+      &::before {
+        @include mixins.purpleShadow;
+        @include mixins.absCenter;
+      }
     }
     &__img-1 {
       object-fit: cover;
@@ -71,19 +80,43 @@
 }
 
 .about-section {
+  position: relative;
+
+  &::before {
+    @include mixins.purpleShadow;
+    top: 27rem;
+    right: calc(50% - 50vw - 24rem);
+  }
   .about {
     &__image {
       border-radius: 30px;
       margin-right: 4rem;
       box-shadow: 0 4px 4px rgba($color-black, 0.25);
     }
+
+    &__image-container {
+      position: relative;
+
+      &::before {
+        @include mixins.purpleShadow;
+        @include mixins.absCenter;
+      }
+    }
   }
 }
 
 .feature-section {
+  position: relative;
   padding: 8rem 4rem 0;
   background-color: $color-grey-dark-3;
   justify-items: center;
+  z-index: -1;
+
+  &::before {
+    @include mixins.purpleShadow;
+    top: 40rem;
+    left: calc(50% - 50vw - 10rem);
+  }
 
   .feature {
     &__items {
@@ -212,6 +245,13 @@
 }
 
 .application-section {
+  position: relative;
+
+  &::before {
+    @include mixins.purpleShadow;
+    top: -5rem;
+    right: calc(50% - 50vw - 20rem);
+  }
   .application {
     &__links {
       display: flex;
