@@ -820,6 +820,19 @@ body {
   align-items: center;
   gap: 5rem;
 }
+.navigation__shadow {
+  content: "";
+  position: absolute;
+  width: 46.5rem;
+  height: 46.5rem;
+  border-radius: 999px;
+  background-color: rgba(118, 97, 164, 0.5);
+  filter: blur(150px);
+  pointer-events: none;
+  z-index: -10;
+  top: -20rem;
+  right: calc(50% - 50vw - 15rem);
+}
 .navigation__list {
   display: flex;
   align-items: center;

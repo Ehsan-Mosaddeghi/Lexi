@@ -13,6 +13,12 @@
   align-items: center;
   gap: 5rem;
 
+  &__shadow {
+    @include mixins.purpleShadow;
+    top: -20rem;
+    right: calc(50% - 50vw - 15rem);
+  }
+
   &__list {
     display: flex;
     align-items: center;
