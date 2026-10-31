@@ -3,7 +3,8 @@
 
 .footer-box {
   position: relative;
-  overflow-x: clip;
+  overflow: clip;
+  padding: 0 2rem;
 
   &::before {
     @include mixins.purpleShadow;

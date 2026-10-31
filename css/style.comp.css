@@ -874,7 +874,8 @@ body {
 
 .footer-box {
   position: relative;
-  overflow-x: clip;
+  overflow: clip;
+  padding: 0 2rem;
 }
 .footer-box::before {
   content: "";
