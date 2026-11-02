@@ -33,6 +33,10 @@
     color: $color-grey-dark;
     border: 1px solid $color-grey-dark;
   }
+
+  &--full {
+    width: 100%;
+  }
 }
 
 .link {

@@ -1,0 +1,25 @@
+@use "../abstracts/variables" as *;
+@use "../abstracts/mixins";
+
+.collaboration-box {
+  gap: 4rem;
+}
+
+.collaboration {
+  &__form {
+    gap: 3rem;
+  }
+
+  &__image-box {
+    position: relative;
+
+    &::before {
+      @include mixins.purpleShadow;
+      @include mixins.absCenter;
+    }
+  }
+
+  &__image {
+    width: 100%;
+  }
+}
