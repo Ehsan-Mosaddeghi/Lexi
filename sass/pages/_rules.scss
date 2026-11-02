@@ -1,0 +1,18 @@
+@use "../abstracts/variables" as *;
+@use "../abstracts/mixins";
+
+.rules-box {
+  gap: 4rem;
+}
+.rules__image-box {
+  position: relative;
+
+  &::before {
+    @include mixins.purpleShadow;
+    @include mixins.absCenter;
+  }
+}
+
+.rules__image {
+  max-width: 100%;
+}
