@@ -105,7 +105,7 @@
       <section class="about-section u-margin-bottom-2xl container">
         <h2 class="heading-secondary u-margin-bottom-medium">درباره ما</h2>
 
-        <div class="grid-cols-2 class">
+        <div class="grid-cols-2 about-box">
           <div>
             <h2 class="heading-secondary">با لکسی آسان یاد بگیر</h2>
             <p class="paragraph">
@@ -130,6 +130,11 @@
               src="assets/images/about-us.png"
               alt="About us image"
             />
+            <div class="about__icon-box icon icon--large">
+              <svg class="about__icon">
+                <use xlink:href="assets/sprite.svg#Arrow"></use>
+              </svg>
+            </div>
           </div>
         </div>
       </section>
@@ -258,15 +263,15 @@
           </p>
 
           <div class="application__links">
-            <a href="#" class="link application__link">
-              <span class="link__label">با دریافت بازار</span>
+            <a href="#" class="link application__link application__bazar">
+              <span class="link__label">دریافت از بازار</span>
               <img
                 class="link__logo-bazar"
                 src="assets/images/bazar-logo.png"
                 alt="Bazar logo"
               />
             </a>
-            <a href="#" class="link application__link">
+            <a href="#" class="link application__link application__sib">
               <span class="link__label">دریافت نسخه IOS از</span>
               <img
                 class="link__logo-sib"
@@ -274,8 +279,7 @@
                 alt="Sib logo"
               />
             </a>
-            <a href="#" class="link application__link">
-              <span class="link__label">دریافت از</span>
+            <a href="#" class="link application__link application__google">
               <img
                 class="link__logo-google"
                 src="assets/images/google-play-logo.png"
@@ -345,7 +349,10 @@
     <footer class="footer-box">
       <div class="footer grid-cols-3 container">
         <div>
-          <img src="assets/images/logo.svg" />
+          <a href="index.html" class="">
+            <img src="assets/images/logo.svg" />
+          </a>
+
           <p>
             اپلیکیشن لکسی، اولین پلنفرم هوشمند آموزش زبان انگلیسی میباشد که با
             بهره گیری از مناسب ترین متد آموزشی، شما میتوانید آموزش زبان را با آن
@@ -356,25 +363,25 @@
         </div>
 
         <div>
-          <h3 class="heading-tertiary">دسترسی</h3>
+          <h3 class="heading-tertiary u-margin-bottom-small">دسترسی</h3>
           <ul class="footer__list">
-            <li>
+            <li class="footer__list__item">
               <a href="#" class="link footer__link">صفحه اصلی</a>
             </li>
-            <li>
+            <li class="footer__list__item">
               <a href="#" class="link footer__link">همکاری با ما</a>
             </li>
-            <li>
+            <li class="footer__list__item">
               <a href="#" class="link footer__link">درباره ما</a>
             </li>
-            <li>
+            <li class="footer__list__item">
               <a href="#" class="link footer__link">قوانین و مقررات</a>
             </li>
           </ul>
         </div>
 
-        <div>
-          <h3 class="heading-tertiary">مجوزها</h3>
+        <div class="footer__license-box">
+          <h3 class="heading-tertiary u-margin-bottom-small">مجوزها</h3>
           <img src="assets/images/license.png" alt="Rules" />
         </div>
       </div>

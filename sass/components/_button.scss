@@ -11,6 +11,13 @@
   border: none;
   padding: 0.8rem 6rem;
   cursor: pointer;
+  transition: all 0.2s;
+
+  &:hover {
+    background-color: $color-primary-light;
+    box-shadow: 0 4px 4px rgba($color-black, 0.3);
+    transform: translateY(-2px);
+  }
 
   &--primary {
     background: $color-primary;
@@ -45,7 +52,10 @@
     cursor: pointer;
     padding: 1rem 2rem;
     text-decoration: none;
-    border-radius: $round-full;
-    color: $color-white;
+    color: inherit;
+  }
+
+  &--primary {
+    color: $color-primary;
   }
 }
