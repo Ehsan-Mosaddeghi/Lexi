@@ -1024,6 +1024,7 @@ body {
   right: calc(50% - 50vw - 24rem);
 }
 .about-section .about__image {
+  max-width: 100%;
   border-radius: 30px;
   margin-right: 4rem;
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
@@ -1343,7 +1344,35 @@ body {
   align-self: end;
 }
 .contact__image {
+  max-width: 100%;
   border-radius: 12px;
+}
+
+.rules-box {
+  gap: 4rem;
+}
+
+.rules__image-box {
+  position: relative;
+}
+.rules__image-box::before {
+  content: "";
+  position: absolute;
+  width: 46.5rem;
+  height: 46.5rem;
+  border-radius: 999px;
+  background-color: rgba(118, 97, 164, 0.5);
+  filter: blur(150px);
+  pointer-events: none;
+  z-index: -10;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.rules__image {
+  max-width: 100%;
 }
 
 /*# sourceMappingURL=style.css.map */
