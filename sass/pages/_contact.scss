@@ -1,0 +1,60 @@
+@use "../abstracts/variables" as *;
+@use "../abstracts/mixins";
+
+.contact-section {
+}
+
+.information-box {
+  gap: 4rem;
+}
+
+.information {
+  position: relative;
+  padding: 2rem 3rem;
+  border-radius: 12px;
+  background-color: rgba($color-grey, 0.08);
+  box-shadow: 0 8px 16px rgba($color-black, 0.16);
+  box-shadow: inset 0 -10px 4px rgba(#5656561f, 0.12);
+
+  @include mixins.gradientBorder(to bottom, #8f8f8f, transparent);
+  &__item {
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+    padding: 3rem 2rem;
+
+    &:not(:last-child) {
+      border-bottom: 1px solid $color-bg-gradient-mid-1;
+    }
+  }
+
+  &__icon {
+    width: 2.5rem;
+    height: 2.5rem;
+    color: $color-primary;
+  }
+
+  &__value {
+    font-size: $font-sm;
+    font-weight: 700;
+  }
+
+  &__map {
+    width: 100%;
+  }
+  &__img {
+    border-radius: 12px;
+    width: 100%;
+    object-fit: cover;
+  }
+}
+
+.contact {
+  &__image-box {
+    align-self: end;
+  }
+
+  &__image {
+    border-radius: 12px;
+  }
+}
