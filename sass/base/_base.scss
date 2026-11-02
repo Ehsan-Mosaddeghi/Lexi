@@ -1,3 +1,5 @@
+@use "../abstracts/mixins";
+
 *,
 *::after,
 *::before {
@@ -7,8 +9,21 @@
 }
 
 html {
-  font-size: 62.5%; // 10px
+  font-size: 62.5%; //1rem = 10px
   direction: rtl;
+
+  @include mixins.respond(tab-land) {
+    font-size: 56.25%; //1rem = 9px
+  }
+  @include mixins.respond(tab-port) {
+    font-size: 50%; //1rem = 8px
+  }
+  @include mixins.respond(phone) {
+    font-size: 43.75%; //1rem = 7px
+  }
+  @include mixins.respond(large-desktop) {
+    font-size: 68.75%; //1rem = 11px
+  }
 }
 
 body {

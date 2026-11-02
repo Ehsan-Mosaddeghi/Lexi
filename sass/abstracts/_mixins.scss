@@ -47,3 +47,30 @@
     pointer-events: none;
   }
 }
+
+// MEDIA QUERIES
+@mixin respond($breakpoint) {
+  @if $breakpoint == phone {
+    @media only screen and (max-width: $screen-sm) {
+      @content;
+    }
+  }
+
+  @if $breakpoint == tab-port {
+    @media only screen and (max-width: $screen-medium) {
+      @content;
+    }
+  }
+
+  @if $breakpoint == tab-land {
+    @media only screen and (max-width: $screen-lg) {
+      @content;
+    }
+  }
+
+  @if $breakpoint == large-desktop {
+    @media only screen and (min-width: $screen-xl) {
+      @content;
+    }
+  }
+}

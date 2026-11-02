@@ -13,6 +13,10 @@
   align-items: center;
   gap: 5rem;
 
+  @include mixins.respond(tab-port) {
+    gap: 2rem;
+  }
+
   &__shadow {
     @include mixins.purpleShadow;
     top: -20rem;
@@ -23,6 +27,10 @@
     display: flex;
     align-items: center;
     gap: 3rem;
+
+    @include mixins.respond(tab-port) {
+      gap: 1rem;
+    }
   }
 
   &__item {
