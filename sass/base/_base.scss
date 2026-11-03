@@ -18,9 +18,6 @@ html {
   @include mixins.respond(tab-port) {
     font-size: 50%; //1rem = 8px
   }
-  @include mixins.respond(phone) {
-    font-size: 43.75%; //1rem = 7px
-  }
   @include mixins.respond(large-desktop) {
     font-size: 68.75%; //1rem = 11px
   }
@@ -30,6 +27,5 @@ body {
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
-  min-height: 100svh;
   overflow-x: clip;
 }
