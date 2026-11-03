@@ -19,6 +19,11 @@
     justify-items: center;
     margin: 8rem auto 4rem;
 
+    @include mixins.respond(phone) {
+      grid-template-columns: 1fr 1fr;
+      gap: 2rem;
+    }
+
     @include mixins.respond(tab-port) {
       padding: 4rem;
     }

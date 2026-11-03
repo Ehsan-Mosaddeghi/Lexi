@@ -17,6 +17,13 @@
     gap: 2rem;
   }
 
+  &__logo {
+    @include mixins.respond(tab-port) {
+      width: 5.5rem;
+      height: 5.5rem;
+    }
+  }
+
   &__shadow {
     @include mixins.purpleShadow;
     top: -20rem;

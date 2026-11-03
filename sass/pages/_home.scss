@@ -5,12 +5,12 @@
   position: relative;
   align-items: center;
   gap: 2rem;
-  // isolation: isolate;
   &::before {
     @include mixins.purpleShadow;
-    top: 40rem; // move up or down to match the design
+    top: 40rem;
     left: calc(50% - 50vw - 11rem);
   }
+
   .hero {
     &__images {
       position: relative;
@@ -18,17 +18,32 @@
         @include mixins.purpleShadow;
         @include mixins.absCenter;
       }
+
+      @include mixins.respond(phone) {
+        @include mixins.flexCenter;
+      }
     }
     &__img-1 {
       object-fit: cover;
-      width: 32rem;
+      width: 50%;
+
+      @include mixins.respond(phone) {
+        width: 40%;
+      }
     }
     &__img-2 {
       @include mixins.absCenter;
-      width: 38rem;
+      width: 60%;
       object-fit: cover;
       transform: translate(-65%, -50%);
       z-index: -1;
+
+      @include mixins.respond(phone) {
+        position: relative;
+        inset: auto;
+        transform: translate(0, 0);
+        width: 45%;
+      }
     }
 
     &__content {
@@ -40,6 +55,10 @@
       align-items: center;
       gap: 8rem;
       margin-top: 8rem;
+
+      @include mixins.respond(phone) {
+        justify-content: flex-start;
+      }
     }
 
     &__info-item {
@@ -147,12 +166,20 @@
     left: calc(50% - 50vw - 10rem);
   }
 
+  @include mixins.respond(phone) {
+    padding: 4rem;
+  }
+
   .feature {
     &__items {
       justify-items: center;
       gap: 4rem;
       @include mixins.respond(tab-port) {
         gap: 2rem;
+      }
+      @include mixins.respond(phone) {
+        grid-row-start: 2;
+        display: flex;
       }
     }
 
@@ -162,6 +189,7 @@
       flex-direction: column;
       align-items: center;
       justify-content: center;
+      text-align: center;
       background-color: #282a2c;
       padding: 4rem;
       width: 100%;
@@ -172,11 +200,16 @@
 
       @include mixins.respond(tab-port) {
         padding: 1rem;
+        gap: 1rem;
       }
     }
 
     &__item:nth-last-child(-n + 2) {
       transform: translateY(4rem);
+
+      @include mixins.respond(phone) {
+        transform: translateY(0);
+      }
     }
 
     &__icon {
@@ -232,9 +265,8 @@
     &__icon-box {
       @include mixins.flexCenter;
       position: absolute;
-      // padding: 3rem 2rem;
+      padding: 1.5rem;
       background-color: rgba($color-grey-dark, 0.1);
-      // border: 1px solid $color-white;
       box-shadow: inset 0 4px 4px rgba($color-grey-dark, 0.15);
       backdrop-filter: blur(4px);
       border-radius: $round-medium;
@@ -248,8 +280,10 @@
       );
     }
     &__icon {
+      width: 100%;
     }
     &__icon-1 {
+      width: 10rem;
       top: -5%;
       right: -35%;
     }
@@ -268,6 +302,11 @@
   background-color: #353535;
   padding: 4rem;
   border-radius: 12px;
+
+  @include mixins.respond(phone) {
+    padding: 1rem;
+  }
+
   .benefits {
     &__item {
       display: flex;
@@ -279,8 +318,13 @@
 
     &__icon {
       color: $color-primary;
-      width: 8rem;
-      height: 8rem;
+      width: 50%;
+      height: 50%;
+
+      @include mixins.respond(phone) {
+        width: 40%;
+        height: 40%;
+      }
     }
 
     &__label {
@@ -299,9 +343,19 @@
     right: calc(50% - 50vw - 20rem);
   }
   .application {
+    &__image-box {
+      @include mixins.respond(phone) {
+        text-align: center;
+      }
+    }
     &__image {
       width: 80%;
       transform: translateY(-5rem);
+
+      @include mixins.respond(phone) {
+        width: 70%;
+        transform: translateY(0);
+      }
     }
     &__links {
       display: flex;
@@ -309,6 +363,11 @@
       align-items: center;
       flex-wrap: wrap;
       row-gap: 2rem;
+
+      @include mixins.respond(phone) {
+        justify-content: start;
+        gap: 1rem;
+      }
     }
 
     &__bazar {
@@ -340,12 +399,21 @@
 .weblog {
   &__items {
     gap: 4rem;
+
+    @include mixins.respond(phone) {
+      grid-template-columns: 1fr;
+    }
   }
   &__item {
     position: relative;
     border-radius: 12px;
     overflow: hidden;
     box-shadow: 0 4px 4px rgba($color-black, 0.15);
+
+    @include mixins.respond(phone) {
+      max-width: 40rem;
+      margin: 0 auto;
+    }
   }
 
   &__content {
