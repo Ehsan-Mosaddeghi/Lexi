@@ -1,5 +1,5 @@
 # Lexi
 
-## Live Demo : https://ehsan-lexi.vercel.app/
+🔗 **Live Demo:** https://ehsan-lexi.vercel.app/
 
 This is a simple exercise project created to practice and improve my Sass (SCSS) skills.
