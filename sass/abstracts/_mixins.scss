@@ -30,6 +30,11 @@
   filter: blur(150px);
   pointer-events: none;
   z-index: -10;
+
+  @include respond(phone) {
+    width: 36rem;
+    height: 36rem;
+  }
 }
 
 @mixin gradientBorder($angle: 135deg, $from, $to, $width: 1px) {

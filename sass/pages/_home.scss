@@ -146,9 +146,11 @@
         border-radius: $round-full;
         transform: translate(-50%, -50%) rotate(45deg);
       }
-    }
-    &__icon {
-      background-color: #ff9291;
+
+      @include mixins.respond(phone) {
+        right: 0;
+        bottom: 0;
+      }
     }
   }
 }
@@ -180,6 +182,7 @@
       @include mixins.respond(phone) {
         grid-row-start: 2;
         display: flex;
+        font-size: $font-xs;
       }
     }
 
@@ -223,8 +226,8 @@
       mask-size: cover !important;
 
       @include mixins.respond(tab-port) {
-        width: 4rem;
-        height: 5rem;
+        width: 3rem;
+        height: 4rem;
       }
     }
 

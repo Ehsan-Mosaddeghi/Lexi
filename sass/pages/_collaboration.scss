@@ -12,14 +12,25 @@
 
   &__image-box {
     position: relative;
+    text-align: center;
 
     &::before {
       @include mixins.purpleShadow;
       @include mixins.absCenter;
     }
+
+    @include mixins.respond(phone) {
+      grid-row-start: 1;
+      text-align: center;
+    }
   }
 
   &__image {
     width: 100%;
+    max-width: 40rem;
+
+    @include mixins.respond(phone) {
+      max-width: 25rem;
+    }
   }
 }

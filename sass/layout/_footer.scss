@@ -20,7 +20,8 @@
     margin: 8rem auto 4rem;
 
     @include mixins.respond(phone) {
-      grid-template-columns: 1fr 1fr;
+      grid-template-columns: 1fr;
+      justify-items: start;
       gap: 2rem;
     }
 
@@ -69,6 +70,10 @@
 
     &__license-box {
       justify-self: end;
+
+      @include mixins.respond(phone) {
+        justify-self: start;
+      }
     }
   }
 }

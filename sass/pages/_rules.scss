@@ -6,6 +6,11 @@
 }
 .rules__image-box {
   position: relative;
+  text-align: center;
+
+  @include mixins.respond(phone) {
+    grid-row-start: 1;
+  }
 
   &::before {
     @include mixins.purpleShadow;
@@ -14,5 +19,10 @@
 }
 
 .rules__image {
-  max-width: 100%;
+  width: 100%;
+  max-width: 40rem;
+
+  @include mixins.respond(phone) {
+    max-width: 25rem;
+  }
 }

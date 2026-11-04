@@ -51,11 +51,20 @@
 
 .contact {
   &__image-box {
-    align-self: end;
+    text-align: center;
+
+    @include mixins.respond(phone) {
+      grid-row-start: 1;
+    }
   }
 
   &__image {
-    width: 80%;
+    width: 100%;
+    max-width: 40rem;
+
+    @include mixins.respond(phone) {
+      max-width: 25rem;
+    }
     border-radius: 12px;
   }
 }
