@@ -40,6 +40,10 @@
         }
         &:not(:last-child) {
           margin-bottom: 4rem;
+
+          @include mixins.respond(phone) {
+            margin-bottom: 2rem;
+          }
         }
       }
     }

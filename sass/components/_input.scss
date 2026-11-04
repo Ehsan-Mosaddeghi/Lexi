@@ -8,8 +8,18 @@
   .input-box {
     position: relative;
     width: 100%;
-    @include mixins.gradientBorder(to bottom, $color-grey-dark-2, transparent);
     border-radius: $round-large;
+    box-shadow: 0 4px 4px rgba($color-black, 0.1);
+
+    @include mixins.gradientBorder(to bottom, $color-grey-dark-2, transparent);
+
+    &:has(.input-box__field:focus) {
+      @include mixins.gradientBorder(to bottom, $color-primary, transparent);
+    }
+
+    &:has(.input-box__field:focus:invalid) {
+      @include mixins.gradientBorder(to bottom, $color-error, transparent);
+    }
 
     &__field {
       position: relative;
@@ -24,7 +34,6 @@
 
       &:focus {
         outline: none;
-        border-top: 1px solid $color-primary;
       }
 
       &:focus:invalid {
